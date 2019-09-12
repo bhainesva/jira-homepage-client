@@ -1,0 +1,22 @@
+.JiraItem {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid gray;
+  border-radius: 4px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: left;
+  box-shadow: 0px 1px 2px 0px rgba(9, 30, 66, 0.25);
+  margin-bottom: 5px;
+}
+
+.JiraItem:hover {
+  background-color: #EBECF0
+}
+
+.JiraItem-summary {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.JiraItem-key {}

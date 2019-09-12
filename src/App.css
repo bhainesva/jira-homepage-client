@@ -1,11 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F4F5F7;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: gray;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .App {
   text-align: center;
+  display: flex;
 }
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+}
+
+.App-status {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  margin-top: 12px;
+}
+
+.App-statusLabel {
+  font-weight: bold;
+  font-size: 14px;
+  color: #5E6C84;
+  text-transform: uppercase;
 }
 
 .App-header {
@@ -30,4 +65,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.ItemColumn
+{
+  display: flex;
+  flex-basis: 33%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.ItemColumn-heading
+{
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+  font-weight: bold;
+  font-size: 14px;
+  color: #5E6C84;
+  text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.ItemColumn-headingButton
+{
+  margin-left: 8px;
+}
+
+.Button--build
+{
+  padding: 15px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #286090;
+}
+
+.Button--build.running
+{
+  background-color: #333;
+}
+
+.Button--build[disabled] {
+  background-color: gray;
+  cursor: default;
 }
